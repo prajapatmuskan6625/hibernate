@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Jun-2024, 11:56:53 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="com.rays.inheritance.Cheque" extends="com.rays.inheritance.Payment" table="CHEQUE" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="chqNumber" type="java.lang.String">
+            <column name="CHQNUMBER" />
+        </property>
+        <property name="bankName" type="java.lang.String">
+            <column name="BANKNAME" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>

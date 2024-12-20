@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 19-Jun-2024, 11:56:53 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <joined-subclass name="com.rays.inheritance.CreditCardPayment" extends="com.rays.inheritance.Payment" table="CREDITCARDPAYMENT" lazy="false">
+        <key>
+            <column name="ID" />
+        </key>
+        <property name="ccType" type="java.lang.String">
+            <column name="CCTYPE" />
+        </property>
+    </joined-subclass>
+</hibernate-mapping>
